@@ -1,5 +1,4 @@
 const http = require("http")
-const { IProducts } = require("../../models/IProducts")
 
 const products = [
   {
@@ -19,7 +18,6 @@ const products = [
 /**
 *  @param {http.IncomingMessage} req
 *  @param {http.ServerResponse} res
-*  @return {IProducts} product
 */
 const getOneProductController = (req, res) => {
   const id = req.params
